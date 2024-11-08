@@ -1,0 +1,520 @@
+/* Reset some default styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Hero Section */
+/* .hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://plus.unsplash.com/premium_photo-1661526833843-248a2f8fe129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff9f43;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #e58e26;
+}
+  */
+
+/* Featured Section */
+.featured {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.restaurant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-card h3 {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.restaurant-card p {
+  padding: 0 15px 15px;
+  color: #666;
+}
+
+/* Categories Section */
+.categories {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-buttons button {
+  padding: 10px 20px;
+  background-color: #ff9f43;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-buttons button:hover {
+  background-color: #e58e26;
+}
+
+/* View All Restaurants Button */
+.view-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #ff9f43;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .view-all:hover {
+    background-color: #e58e26;
+  }
+
+/* Promo Banner */
+.promo-banner {
+  padding: 20px;
+  background-color: #ffefd5;
+  color: #ff7f50;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+  
+  /* All Restaurants Section */
+.all-restaurants {
+    margin-top: 70px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .all-restaurants h2 {
+    font-family: 'Georgia', serif; /* Changed font family to a more elegant one */
+    font-size: 48px; /* Increased the font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Added uppercase for styling */
+    letter-spacing: 2px; /* Slightly increased letter spacing */
+  }
+  
+  /* Restaurant Grid Styling */
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Max 3 cards per row */
+    gap: 30px; /* Increased gap between cards */
+    justify-items: center;
+  }
+  
+  /* Restaurant Card Styling */
+  .restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    width: 250px; /* Increased width of restaurant card */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Fixed Size for Images */
+  .restaurant-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio while covering the area */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-card strong {
+    color: #007bff;
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile Styling */
+  @media (max-width: 768px) {
+    .restaurant-card h3 {
+      font-size: 20px;
+    }
+  
+    .restaurant-card p {
+      font-size: 12px;
+    }
+  
+    /* Grid Layout Adjustment for Mobile */
+    .restaurant-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+  
+    .restaurant-card {
+      width: 220px; /* Slightly smaller cards on mobile */
+    }
+  }
+  
+  /* Cart Item Styles */
+  .cart-item, .restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+  
+  .cart-item h3, .restaurant-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cart-total {
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff9f43;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e58e26;
+  }
+  
+ 
+
+  
+  
+  /* Horizontal Navbar */
+  .navbar {
+    position: absolute;
+    top: 20px;  /* Adjusting navbar position */
+    right: 20px; /* Adjusting navbar position */
+    display: flex;
+    flex-direction: row; /* Ensures items are in a horizontal row */
+    gap: 30px;  /* Space between navbar items */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0); /* Slight transparency to let image show */
+    border-radius: 8px 0 0 8px; /* Rounded corners */
+    z-index: 10; /* Ensure navbar is on top of the hero section */
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #ff9f43;
+    color: white;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    height: 98vh; /* Adjust height of the hero section */
+    background: url('https://plus.unsplash.com/premium_photo-1661526833843-248a2f8fe129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9f43;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-container button:hover {
+    background-color: #e58e26;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  
+  /* All Foods Section */
+.all-foods {
+    margin-top: 70px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .all-foods h2 {
+    font-family: 'Georgia', serif; /* Changed font family to a more elegant one */
+    font-size: 48px; /* Increased the font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Added uppercase for styling */
+    letter-spacing: 2px; /* Slightly increased letter spacing */
+  }
+  
+  /* Food Grid Styling */
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Max 3 cards per row */
+    gap: 30px; /* Increased gap between cards */
+    justify-items: center;
+  }
+  
+  /* Food Card Styling */
+  .food-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    width: 250px; /* Increased width of food card */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Fixed Size for Images */
+  .food-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio while covering the area */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .food-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .food-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .food-card strong {
+    color: #007bff;
+  }
+  
+  .food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile Styling */
+  @media (max-width: 768px) {
+    .food-card h3 {
+      font-size: 20px;
+    }
+  
+    .food-card p {
+      font-size: 12px;
+    }
+  
+    /* Grid Layout Adjustment for Mobile */
+    .food-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+  
+    .food-card {
+      width: 220px; /* Slightly smaller cards on mobile */
+    }
+  }
+
+
+  
+/* Search Bar Styling */
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar {
+    width: 80%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  }
